@@ -1,0 +1,244 @@
+/* selector {
+  property: value;
+  propertytwo: value;
+} */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(65, 65, 236);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.header {
+  background-color: #1c2991;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 90%;
+  border-radius: 100px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #0000ff;
+}
+
+.logo-header {
+  padding: 20px 20px;
+  color: white;
+  /* margin: 10px; */
+  margin: auto;
+  margin-left: 280px;
+  background-color: #1c2991;
+  text-align: center;
+  /* vertical-align: top; */
+  width: 50%;
+  /* height: 50px; */
+  /* overflow: auto; */
+  border-width: 3px;
+  border-style: outset;
+  border-color: aqua;
+  border-radius: 135px;
+  visibility: visible;
+  /* display: flex; */
+  /* background-image: url(../download.webp); */
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
+  /* background-position: 0px 100px; */
+  /* background-repeat: no-repeat; */
+  /* height: 100px; */
+  /* width: 100%; */
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+/* .list {
+  padding: 10px;
+  margin: auto;
+  width: 90%;
+  background-color: #1c2991;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #1c2991;
+} */
+
+.sidebar {
+  display: inline-block;
+}
+
+input[type="id"],
+input[type="password"] {
+  /* width: 20%; */
+  padding: 10px;
+  margin: 10px;
+  display: block;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #1c2991;
+  color: white;
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+span {
+  /* content: ""; */
+  padding: 10px;
+  margin: auto;
+  display: block;
+  border-bottom: green;
+  border-top: red;
+  border-left: yellow;
+  border-right: blue;
+  border-width: 4px;
+  border-radius: 70%;
+  border-style: solid;
+
+  width: 10px;
+  height: 10px;
+  background-color: #f0f0f0;
+}
+
+li {
+  background-color: #0000ff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10%;
+  color: white;
+  font-size: 16px;
+  list-style-type: none;
+  /* display: inline-block; */
+  width: calc(60% / 3);
+  text-align: center;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+
+ul {
+  color: white;
+  list-style-type: none;
+  padding: 5px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #1c2991;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  /* display: inline-block; */
+  width: 90%;
+  overflow: hidden;
+
+}
+
+.head-bar {
+  display: flex;
+  background-color: #0000ff;
+  width: 97%;
+  margin: 20px auto;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.head-bar div {
+  background-color: #1c2991;
+  color: white;
+  font-size: 17px;
+  padding: 20px;
+  width: 23%;
+  text-align: center;
+}
+
+.css,
+.html,
+.js {
+  background-color: #1c2991;
+  color: white;
+  font-size: 17px;
+  padding: 10px;
+  margin: 20px 20px;
+  width: 7%;
+  height: 50px;
+  border-radius: 21px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #0000ff;
+  transition-duration: 3s;
+  transition-property: margin, width, background-color, height;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.25s;
+  display: flexbox;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.css:hover,
+.html:hover,
+.js:hover {
+  margin: 20px 20px;
+  width: 500px;
+  background-color: red;
+  height: 150px;
+}
+
+label {
+  background-color: #1c2991;
+  width: 10%;
+  display: inline-block;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: auto;
+  border: solid 3px #ccc;
+  text-align: center;
+}
+
+label:hover {
+  background-color: #0a1f6b;
+  color: white;
+}
+
+footer {
+  background-color: #1c2991;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 90%;
+  border-radius: 100px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #0000ff;
+}
+
+/* h1 { */
+/* background-color: #1c2991;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  } */
+/* } */
