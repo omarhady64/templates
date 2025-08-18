@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Company - Menu</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="pizzacompany.jfif" alt="Pizza Company Logo">
+      <!-- Pizza Company -->
+      <a href="menu.html"> Delivery <span></span>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="menu-container">
+    <!-- اختيار الفرع الأقرب -->
+    <section class="menu-section">
+      <h2>Select Your Nearest Branch</h2>
+      <select id="branchSelect" onchange="updateNearestBranch()">
+        <option value="Mall Mazar, Sheikh Zayed">Mall Mazar, Sheikh Zayed</option>
+        <option value="Cityscape, 6th of October">Cityscape, 6th of October</option>
+        <option value="Wasla Dashour, Sheikh Zayed">Wasla Dashour, Sheikh Zayed</option>
+        <option value="Gamaa El-Dawlyen, Mohandessin">Gamaa El-Dawlyen, Mohandessin</option>
+      </select>
+      <p id="nearestBranch">Nearest Branch: Mall Mazar, Sheikh Zayed</p>
+    </section>
+
+    <!-- Classic Pizzas -->
+    <section class="menu-section">
+      <h2>Classic Pizzas</h2>
+      <div class="menu-grid">
+        <div class="menu-item" onclick="addToCart('Margherita',120)">
+          <h3>Margherita</h3>
+          <p>Tomato, Cheese</p>
+          <span>120 EGP</span>
+        </div>
+        <div class="menu-item" onclick="addToCart('Pepperoni',150)">
+          <h3>Pepperoni</h3>
+          <p>Pepperoni, Cheese</p>
+          <span>150 EGP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Pizzas -->
+    <section class="menu-section">
+      <h2>Special Pizzas</h2>
+      <div class="menu-grid">
+        <div class="menu-item" onclick="addToCart('Ransh Chicken',170)">
+          <h3>BBQ Chicken</h3>
+          <p>Chicken, BBQ Sauce</p>
+          <span>170 EGP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- السلة الحية -->
+    <section class="menu-section">
+      <h2>Your Current Order</h2>
+      <div id="cartItems" class="menu-grid"></div>
+      <p id="totalPrice" style="font-weight:bold; font-size:18px;"></p>
+      <div class="menu-item" onclick="location.href='checkout.html'">
+        <h3>Go to Checkout</h3>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

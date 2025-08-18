@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Pizza Company</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="pizzacompany.jfif" alt="Pizza Company Logo">
+      <a href="menu.html"> Delivery <span></span>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="checkout-container">
+
+    <section class="menu-section">
+      <h2>Your Cart</h2>
+      <div id="cartItems" class="menu-grid"></div>
+      <p id="totalPrice" style="font-weight:bold; font-size:18px;"></p>
+    </section>
+
+    <section class="menu-section">
+      <h2>Payment Method</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <input type="radio" id="cash" name="payment" value="cash">
+          <label for="cash">Cash on Delivery</label>
+        </div>
+        <div class="menu-item">
+          <input type="radio" id="online" name="payment" value="online">
+          <label for="online">Online Payment</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2>Customer Details</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <input type="text" id="name" placeholder="Full Name">
+        </div>
+        <div class="menu-item">
+          <input type="text" id="phone" placeholder="Phone Number">
+        </div>
+        <div class="menu-item">
+          <input type="text" id="address" placeholder="Delivery Address">
+        </div>
+        <div class="menu-item">
+          <input type="number" id="distance" placeholder="Distance (km)">
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <button onclick="placeOrder()" class="checkout-btn">Confirm Order</button>
+      <p id="deliveryFee" style="font-weight:bold; margin-top:15px;"></p>
+    </section>
+
+  </main>
+</body>
+
+</html>
